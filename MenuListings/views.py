@@ -1,8 +1,12 @@
 from django.shortcuts import render
 
-from . import views
-urlpatterns = [
-    path('', views.index, name='menuLists'),
-    path('<int: menuItem_id>', views.menuList, name='menuItem')
-    path('search', views.search, name='search')
-]
+def index (request):
+  return  render(request, 'menuItems/menuItems.html')
+
+
+def menuList (request):
+   return render(request, 'menuItems/menuItem.html')
+
+
+def search (request):
+   return render(request, 'menuItems/search.html')

@@ -2,15 +2,15 @@
  <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo mr-auto"><a href="index.html">청담동 마녀김밥</a></h1>
+      <h1 class="logo mr-auto"><a href="{% url 'index' %}">청담동 마녀김밥</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="{% url 'index' %}">Home</a></li>
-          <li><a href="#about">회사 소개</a></li>
-          <li><a href="#menu">메뉴 소개</a></li>
+          <li ><a href="{% url 'about' %}">회사 소개</a></li>
+          <li><a href="{% url 'menuItems' %}">메뉴 소개</a></li>
           <li><a href="#events">이벤트</a></li>
           <li><a href="#gallery">미녀김밥 미디어</a></li>
           <li><a href="#chefs">매장전보</a></li>
